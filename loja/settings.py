@@ -44,7 +44,11 @@ INSTALLED_APPS = [
     'pedido',
     'perfil',
     "debug_toolbar",
+    'crispy_forms',
+    'crispy_bootstrap4',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
