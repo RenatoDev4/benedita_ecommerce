@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'produto',
     'pedido',
     'perfil',
-    "debug_toolbar",
     'crispy_forms',
     'crispy_bootstrap4',
 ]
@@ -58,7 +57,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'loja.urls'
@@ -150,11 +148,6 @@ SESSION_COOKIE_AGE = 60 * 60 * 24 * 7
 # Salvar a cada requisição
 SESSION_SAVE_EVERY_REQUEST = False
 
-INTERNAL_IPS = [
-    # ...
-    "127.0.0.1",
-    # ...
-]
 
 # Serializer - Padrão JSON
 # SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
